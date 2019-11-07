@@ -1,0 +1,44 @@
+body {
+    color: #ffffff;
+    background: #e0e9f0;
+}
+header {
+    background: #9aca40;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.main-container {
+    color: #000000;
+}
+main {
+    background: #ffffff;
+    padding: 20px;
+}
+#div1 {
+    background: #f89c46;
+    margin: 0px 0px;
+    padding: 5px 20px;
+}
+#div2 {
+    background: #f89c46b4;
+    margin: 0px 0px;
+    padding: 5px 20px;
+}
+#div3 {
+    background: #f89c467a;
+    margin: 0px 0px;
+    padding: 5px 20px;
+}
+.output > div {
+    background: #359cfc;
+    color: #ffffff;
+    padding: 20px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+footer {
+    background: #000000;
+    color: #ffffff;
+    padding: 20px;
+    margin-top: 10px;
+}
