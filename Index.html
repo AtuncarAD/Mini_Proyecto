@@ -5,6 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script>
+        function calculate() {
+        let genre = document.getElementById("genero").value;
+        let now = new Date();
+        let dayOfWeek = now.getDay();
+            if ((0 < dayOfWeek && dayOfWeek < 4) && (genre == "Animada")) {
+                let result1 = "Las películas que puede ver el dia de hoy son:" + "<br>" + "- Kunfu Panda" + "<br>"
+                + "- El principito" + "<br>" + "- El rey leon" + "<br>" + "- Toy Story"
+                let result2 = "Las series que puede ver el dia de hoy son:" + "<br>" + "- Bob Esponja" + "<br>" + 
+                "- Tom y Jerry" + "<br>" + "- Los Simpsons" + "<br>" + "- Dragon Ball Z"
+                let result3 = "Los Documentales que puede ver el dia de hoy son:" + "<br>" + "- Documental 1" + "<br>"
+                + "- Documental 2" + "<br>" + "- Documental 3" + "<br>" + "- Documental 4"
+
+                document.getElementById("output1").innerHTML = result1;
+                document.getElementById("output2").innerHTML = result2;
+                document.getElementById("output3").innerHTML = result3;
+             }
+             else if ((0 < dayOfWeek && dayOfWeek < 4) && (genre == "Acción")) {
+                let result1 = "Las películas que puede ver el dia de hoy son:" + "<br>" + "- Los vegadores 1" + "<br>"
+                + "- Capitan America" + "<br>" + "- Thor 2" + "<br>" + "- El origen"
+                let result2 = "Las series que puede ver el dia de hoy son:" + "<br>" + "- The flash" + "<br>" + 
+                "- Serie 2" + "<br>" + "- Serie 3" + "<br>" + "- Serie 4"
+                let result3 = "Los Documentales que puede ver el dia de hoy son:" + "<br>" + "- Documental 1" + "<br>"
+                + "- Documental 2" + "<br>" + "- Documental 3" + "<br>" + "- Documental 4"
+
+                document.getElementById("output1").innerHTML = result1;
+                document.getElementById("output2").innerHTML = result2;
+                document.getElementById("output3").innerHTML = result3;
+             }
+             else if (((3 < dayOfWeek && dayOfWeek < 7) || dayOfWeek == 0) && (genre == "Animada")) {
+                let result1 = "Las películas que puede ver el dia de hoy son:" + "<br>" + "- Turbo" + "<br>"
+                + "- Cars" + "<br>" + "- Como entrenar a tu dragon" + "<br>" + "- Toy Story 4"
+                let result2 = "Las series que puede ver el dia de hoy son:" + "<br>" + "- Pokemon" + "<br>" + 
+                "- La pantera Rosa" + "<br>" + "- Scooby Doo" + "<br>" + "- Supercampeones"
+                let result3 = "Los Documentales que puede ver el dia de hoy son:" + "<br>" + "- Documental 1" + "<br>"
+                + "- Documental 2" + "<br>" + "- Documental 3" + "<br>" + "- Documental 4"
+
+                document.getElementById("output1").innerHTML = result1;
+                document.getElementById("output2").innerHTML = result2;
+                document.getElementById("output3").innerHTML = result3;
+             }
+             else if (((3 < dayOfWeek && dayOfWeek < 7) || dayOfWeek == 0) && (genre == "Acción")) {
+                let result1 = "Las películas que puede ver el dia de hoy son:" + "<br>" + "- Doctor Strange" + "<br>"
+                + "- Hulk 2" + "<br>" + "- La Pantera Negra" + "<br>" + "- El Señor de los Anillos"
+                let result2 = "Las series que puede ver el dia de hoy son:" + "<br>" + "- Serie 1" + "<br>" + 
+                "- Serie 2" + "<br>" + "- Serie 3" + "<br>" + "- Serie 4"
+                let result3 = "Los Documentales que puede ver el dia de hoy son:" + "<br>" + "- Documental 1" + "<br>"
+                + "- Documental 2" + "<br>" + "- Documental 3" + "<br>" + "- Documental 4"
+
+                document.getElementById("output1").innerHTML = result1;
+                document.getElementById("output2").innerHTML = result2;
+                document.getElementById("output3").innerHTML = result3;
+             }
+             else {
+
+                 let result1 =  "Escriba un valor correcto, asegúrese de que que haya escrito la palabra Animada con mayuscula y que la palabra Acción lleve la tilde"
+                 let result2 =  "Escriba un valor correcto, asegúrese de que que haya escrito la palabra Animada con mayuscula y que la palabra Acción lleve la tilde"
+                 let result3 =  "Escriba un valor correcto, asegúrese de que que haya escrito la palabra Animada con mayuscula y que la palabra Acción lleve la tilde"
+
+                document.getElementById("output1").innerHTML = result1;
+                document.getElementById("output2").innerHTML = result2;
+                document.getElementById("output3").innerHTML = result3;
+             }
+            
+    }
+    
+    </script>
     <title>Pimera Prueba</title>
 </head>
 <body>
@@ -12,47 +79,47 @@
         <!-- 1ra fila -> Header. -->
         <header class="row">
             <div class="col">
-                <h1>HEADER</h1>
+                <h1>MEJORES PELICULAS PARA VER!</h1>
             </div>
         </header>
         <!-- 2da Fila -> "Main" y "Aside" -->
         <section class="main-container row">
             <main class="col-md-8">
-                <h2>MAIN</h2>
-                <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                 Incidunt, debitis laudantium neque dolor quisquam voluptatum 
-                 quia tempora, cumque minus cum numquam ipsa itaque? Sint debitis
-                 ipsam, pariatur dolorem esse quia! Lorem, ipsum dolor sit amet 
-                 consectetur adipisicing elit. Incidunt, debitis laudantium neque 
-                 dolor quisquam voluptatum quia tempora, cumque minus cum numquam 
-                 ipsa itaque? Sint debitis ipsam, pariatur dolorem esse quia!</P>
+                <h2>Te ayudamos a saber que película ver!</h2>
+                <P> Muchas veces podemos tener tiempo libre. Despues de un
+                dia cansado y de mucho trabajo, uno suele pensar en relajarse
+                de diferentes maneras. Algunos duermen, a otros les gusta hacer
+                deporte. Sin embargo, uno de los pasatiempos mas comunes es el
+                ver una película solo o con toda la familia. Ese momento en
+                el cual uno puede relajarse y liberarse del estres del trabajo
+                es muy importante. Por lo tanto te ayudamos a saber que película
+                puedes ver en tu tiempo libre. </P>
                 
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                 Incidunt, debitis laudantium neque dolor quisquam voluptatum 
-                 quia tempora, cumque minus cum numquam ipsa itaque? Sint debitis
-                 ipsam, pariatur dolorem esse quia! Lorem, ipsum dolor sit amet 
-                 consectetur adipisicing elit. Lorem, ipsum dolor sit amet 
-                 consectetur adipisicing elit. Lorem, Ipsum Dolor dolor.</p>
+                <p> Esta página le dara una lista de películas, series y documentales que puede ver
+                en su casa con su familia o solo. los resultados son depende
+                al dia de la semana en el que nos encontremos. Por lo tanto, de 
+                "Lunes a Miercoles" tendra un resultado diferente de "Jueves a Domingo"</p>
             </main>
             <aside class="col-md-4">
                 <div class="row">
                     <div class="col-md-12" id="div1">
-                        <h5>Input 1</h5>
-                      <p>Lorem ipsum dolor sit amet consectetur,
-                         adipisicing elit. Tempore rerum officia 
-                         error optio repellat!</p>
+                        <h5>Primero:</h5>
+                      <p>Identifique el género de la película 
+                         que va a ver. Su repuesta puede ser
+                         "Animada" o "Acción"
+                      </p>
                     </div>
                     <div class="col-md-12" id="div2">
-                        <h5>Input 2</h5>
-                      <p>Lorem ipsum dolor sit amet consectetur,
-                         adipisicing elit. Tempore rerum officia 
-                         error optio repellat!</p>
+                        <h5>Segundo:</h5>
+                      <p>Es muy importante que escriba el género
+                         de la película tal y como esta escrito
+                         en la parte superior.
+                      </p>
                     </div>
                     <div class="col-md-12" id="div3">
-                        <h5>Input 3</h5>
-                      <p>Lorem ipsum dolor sit amet consectetur,
-                         adipisicing elit. Tempore rerum officia 
-                         error optio repellat!</p>
+                        <h5>Tercero: 3</h5>
+                      <p>Ingrese el genero: <input type="text" id="genero" size="10"></p>
+                      <button type="button" onclick="calculate()" class="btn btn-primary">Click here!</button>
                     </div>
                 </div>
             </aside>
@@ -60,28 +127,16 @@
         <!-- 3ra Fila -> "Output division" para los resultados. -->
         <section class="row output">
             <div class="col" id="output1">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Quidem voluptatem ad ex officia perspiciatis perferendis
-                     explicabo minus non, est alias in officiis pariatur itaque
-                      ipsam sapiente consectetur esse similique delectus.</p>
             </div>
             <div class="col" id="output2">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Quidem voluptatem ad ex officia perspiciatis perferendis
-                     explicabo minus non, est alias in officiis pariatur itaque
-                      ipsam sapiente consectetur esse similique delectus.</p>
             </div>
             <div class="col" id="output3" style="margin-right: 0px;">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Quidem voluptatem ad ex officia perspiciatis perferendis
-                     explicabo minus non, est alias in officiis pariatur itaque
-                      ipsam sapiente consectetur esse similique delectus.</p>
             </div>
         </section>
         <!-- 4ta Fila -> Footer. -->
         <footer class="row">
             <div class="col">
-                <h3>Footer</h3>
+                <h3>Disgruta la película</h3>
             </div>
         </footer>
     </div>
